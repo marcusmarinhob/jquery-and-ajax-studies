@@ -11,6 +11,11 @@ function consultaCep(){
             $("#localidade").html(response.localidade);
             $("#uf").html(response.uf);
             $("#cep-title").html("CEP: " + response.cep);
+            $(".cep").show();
         }
     })
 }
+
+$(function(){
+    $(".cep").hide();
+})
